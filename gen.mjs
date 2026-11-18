@@ -86,6 +86,12 @@ const briefs = [
   { region: 'SPACE', head: 'Starship is caught by the tower arms', fact: 'A first for the launch pad' },
   { region: 'MIDDLE EAST', head: 'Trump weighs a Kim meeting in China', fact: 'Rubio says nothing is confirmed' },
   { region: 'AFRICA', head: 'The Gambia clears nine candidates', fact: 'The vote falls on 5 December' },
+  { region: 'MIDDLE EAST', head: 'Tankers burn again in the Strait of Hormuz', fact: 'Three ships hit in a day' },
+  { region: 'UNITED STATES', head: 'Trump says a Washington plot is being probed', fact: 'No credible threat, the White House says' },
+  { region: 'CLIMATE', head: 'The “35 by 35” electrification pledge grows', fact: 'Thirty countries back the goal' },
+  { region: 'CLIMATE', head: '23 countries back an Indigenous fire plan', fact: 'COP31 showcases the proposal' },
+  { region: 'AFRICA', head: 'Nigeria’s envoy row strains Pretoria', fact: 'A summons under the Vienna rules' },
+  { region: 'SCIENCE', head: 'Sentinel-6B settles into orbit', fact: 'The sea-level mission is flying' },
 ];
 
 const also = ['Alcaraz beats Tiafoe', 'Senegal near AFCON 2027', 'Wirtz doubles for Germany', 'Erasmus banned six games'];
@@ -161,12 +167,12 @@ function masthead() {
     <text x="${M + 18}" y="${M + 42}" font-family="Georgia, Times New Roman, serif" font-size="40" font-weight="700" fill="${PAPER}">The World Today</text>
     <text x="${M + 20}" y="${M + 68}" font-family="Helvetica Neue, Helvetica, Arial" font-size="13.5" letter-spacing="3.2" fill="${RED}" font-weight="700">WEDNESDAY 18 NOVEMBER 2026</text>
     <text x="${M + INNER - 18}" y="${M + 40}" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial" font-size="10" letter-spacing="2.2" fill="#9C9285">THE DAY IN ONE IMAGE</text>
-    <text x="${M + INNER - 18}" y="${M + 68}" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial" font-size="10" letter-spacing="2.2" fill="#9C9285">38 STORIES · SIX CONTINENTS</text>
+    <text x="${M + INNER - 18}" y="${M + 68}" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial" font-size="10" letter-spacing="2.2" fill="#9C9285">44 STORIES · SIX CONTINENTS</text>
   </g>`;
 }
 
 const MAP_Y = M + 88 + 10;
-const MAP_H = 186;
+const MAP_H = 130;
 
 function mapBlock() {
   return `
@@ -178,7 +184,7 @@ function mapBlock() {
 }
 
 const LEAD_Y = MAP_Y + MAP_H + 10;
-const LEAD_H = 158;
+const LEAD_H = 146;
 
 function leadBlock() {
   const gap = 12;
@@ -215,10 +221,10 @@ function leadBlock() {
 
 const GRID_Y = LEAD_Y + LEAD_H + 12;
 const COLS = 6;
-const ROWS = 5;
+const ROWS = 6;
 const GAP = 10;
 const CELL_W = (INNER - (COLS - 1) * GAP) / COLS;
-const CELL_H = 84;
+const CELL_H = 86;
 
 function briefGrid() {
   return briefs
@@ -227,8 +233,8 @@ function briefGrid() {
       const r = Math.floor(i / COLS);
       const x = M + c * (CELL_W + GAP);
       const y = GRID_Y + r * (CELL_H + GAP);
-      const head = wrap(brief.head, 23).slice(0, 3);
-      const facts = wrap(brief.fact, 26).slice(0, 2);
+      const head = wrap(brief.head, 24).slice(0, 3);
+      const facts = wrap(brief.fact, 29).slice(0, 2);
       return `
   <g transform="translate(${x.toFixed(1)} ${y})">
     <line x1="0" y1="0" x2="${CELL_W.toFixed(1)}" y2="0" stroke="${RULE}" stroke-width="1.3"/>

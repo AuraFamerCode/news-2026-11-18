@@ -5,8 +5,8 @@
 [![reward](https://make.fun/badge/news-image-20261118/AuraFamerCode/news-2026-11-18/reward.svg)](https://make.fun/bounty/news-image-20261118)
 
 One 1024×1024 front page summing up the world's news of Wednesday 18 November 2026: a dated masthead, a
-dotted world map carrying the day's thirteen datelines, three lead stories, thirty briefs in six columns,
-and a closing strip — thirty-eight stories across six continents.
+dotted world map carrying the day's thirteen datelines, three lead stories, thirty-six briefs in six
+columns, and a closing strip — forty-four stories across six continents.
 
 Leads: Xi Jinping greets Trump in Shenzhen hours after meeting Putin, with Beijing calling for Russia and
 China to lead a multipolar world; Iran strikes the US-run Ali Al Salem base in Kuwait and targets in
